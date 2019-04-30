@@ -1,0 +1,350 @@
+/* make code blocks consistent with toer blocks */
+div.demo > code.label {
+	padding: 4px 0;
+	display: inline-block;
+	float: left;
+}
+/* 4 bit monitor */
+div.demo > code.monitor-1-1::before {
+	content: "0";
+}
+div.demo > input:not(:checked)+*
+			+input:not(:checked)+*
+			+input:not(:checked)+*
+			+input:checked+* 
+			+*+code.monitor-1-1::before {
+	content: "1";
+}
+div.demo > input:not(:checked)+*
+			+input:not(:checked)+*
+			+input:checked+* 
+			+input:not(:checked)+*
+			+*+code.monitor-1-1::before {
+	content: "2";
+}
+div.demo > input:not(:checked)+*
+			+input:not(:checked)+*
+			+input:checked+* 
+			+input:checked+* 
+			+*+code.monitor-1-1::before {
+	content: "3";
+}
+div.demo > input:not(:checked)+*
+			+input:checked+* 
+			+input:not(:checked)+*
+			+input:not(:checked)+*
+			+*+code.monitor-1-1::before {
+	content: "4";
+}
+div.demo > input:not(:checked)+*
+			+input:checked+* 
+			+input:not(:checked)+*
+			+input:checked+* 
+			+*+code.monitor-1-1::before {
+	content: "5";
+}
+div.demo > input:not(:checked)+*
+			+input:checked+* 
+			+input:checked+* 
+			+input:not(:checked)+*
+			+*+code.monitor-1-1::before {
+	content: "6";
+}
+div.demo > input:not(:checked)+*
+			+input:checked+* 
+			+input:checked+* 
+			+input:checked+* 
+			+*+code.monitor-1-1::before {
+	content: "7";
+}
+div.demo > input:checked+*
+			+input:not(:checked)+*
+			+input:not(:checked)+*
+			+input:not(:checked)+*
+			+*+code.monitor-1-1::before {
+	content: "8";
+}
+div.demo > input:checked+*
+			+input:not(:checked)+*
+			+input:not(:checked)+*
+			+input:checked+* 
+			+*+code.monitor-1-1::before {
+	content: "9";
+}
+div.demo > input:checked+*
+			+input:not(:checked)+*
+			+input:checked+* 
+			+input:not(:checked)+*
+			+*+code.monitor-1-1::before {
+	content: "A";
+}
+div.demo > input:checked+*
+			+input:not(:checked)+*
+			+input:checked+* 
+			+input:checked+* 
+			+*+code.monitor-1-1::before {
+	content: "B";
+}
+div.demo > input:checked+*
+			+input:checked+* 
+			+input:not(:checked)+*
+			+input:not(:checked)+*
+			+*+code.monitor-1-1::before {
+	content: "C";
+}
+div.demo > input:checked+*
+			+input:checked+* 
+			+input:not(:checked)+*
+			+input:checked+* 
+			+*+code.monitor-1-1::before {
+	content: "D";
+}
+div.demo > input:checked+*
+			+input:checked+* 
+			+input:checked+* 
+			+input:not(:checked)+*
+			+*+code.monitor-1-1::before {
+	content: "E";
+}
+div.demo > input:checked+*
+			+input:checked+* 
+			+input:checked+* 
+			+input:checked+* 
+			+*+code.monitor-1-1::before {
+	content: "F";
+}
+
+/* 8-bit monitor 2^3-2^0 using big endian */
+div.demo > code.monitor-2-2+code.monitor-1-2::before {
+	content: "0";
+}
+div.demo > input:not(:checked)+*
+			+input:not(:checked)+*
+			+input:not(:checked)+*
+			+input:checked+* 
+			+*+code.monitor-2-2+code.monitor-1-2::before {
+	content: "1";
+}
+div.demo > input:not(:checked)+*
+			+input:not(:checked)+*
+			+input:checked+* 
+			+input:not(:checked)+*
+			+*+code.monitor-2-2+code.monitor-1-2::before {
+	content: "2";
+}
+div.demo > input:not(:checked)+*
+			+input:not(:checked)+*
+			+input:checked+* 
+			+input:checked+* 
+			+*+code.monitor-2-2+code.monitor-1-2::before {
+	content: "3";
+}
+div.demo > input:not(:checked)+*
+			+input:checked+* 
+			+input:not(:checked)+*
+			+input:not(:checked)+*
+			+*+code.monitor-2-2+code.monitor-1-2::before {
+	content: "4";
+}
+div.demo > input:not(:checked)+*
+			+input:checked+* 
+			+input:not(:checked)+*
+			+input:checked+* 
+			+*+code.monitor-2-2+code.monitor-1-2::before {
+	content: "5";
+}
+div.demo > input:not(:checked)+*
+			+input:checked+* 
+			+input:checked+* 
+			+input:not(:checked)+*
+			+*+code.monitor-2-2+code.monitor-1-2::before {
+	content: "6";
+}
+div.demo > input:not(:checked)+*
+			+input:checked+* 
+			+input:checked+* 
+			+input:checked+* 
+			+*+code.monitor-2-2+code.monitor-1-2::before {
+	content: "7";
+}
+div.demo > input:checked+*
+			+input:not(:checked)+*
+			+input:not(:checked)+*
+			+input:not(:checked)+*
+			+*+code.monitor-2-2+code.monitor-1-2::before {
+	content: "8";
+}
+div.demo > input:checked+*
+			+input:not(:checked)+*
+			+input:not(:checked)+*
+			+input:checked+* 
+			+*+code.monitor-2-2+code.monitor-1-2::before {
+	content: "9";
+}
+div.demo > input:checked+*
+			+input:not(:checked)+*
+			+input:checked+* 
+			+input:not(:checked)+*
+			+*+code.monitor-2-2+code.monitor-1-2::before {
+	content: "A";
+}
+div.demo > input:checked+*
+			+input:not(:checked)+*
+			+input:checked+* 
+			+input:checked+* 
+			+*+code.monitor-2-2+code.monitor-1-2::before {
+	content: "B";
+}
+div.demo > input:checked+*
+			+input:checked+* 
+			+input:not(:checked)+*
+			+input:not(:checked)+*
+			+*+code.monitor-2-2+code.monitor-1-2::before {
+	content: "C";
+}
+div.demo > input:checked+*
+			+input:checked+* 
+			+input:not(:checked)+*
+			+input:checked+* 
+			+*+code.monitor-2-2+code.monitor-1-2::before {
+	content: "D";
+}
+div.demo > input:checked+*
+			+input:checked+* 
+			+input:checked+* 
+			+input:not(:checked)+*
+			+*+code.monitor-2-2+code.monitor-1-2::before {
+	content: "E";
+}
+div.demo > input:checked+*
+			+input:checked+* 
+			+input:checked+* 
+			+input:checked+* 
+			+*+code.monitor-2-2+code.monitor-1-2::before {
+	content: "F";
+}
+
+/* 8-bit monitor 2^7-2^4 using big endian */
+div.demo > code.monitor-2-2::before {
+	content: "0";
+}
+div.demo > input:not(:checked)+*
+			+input:not(:checked)+*
+			+input:not(:checked)+*
+			+input:checked+*
+			+*+*+*+*+*+*+*+*
+			+*+code.monitor-2-2::before {
+	content: "1";
+}
+div.demo > input:not(:checked)+*
+			+input:not(:checked)+*
+			+input:checked+* 
+			+input:not(:checked)+*
+			+*+*+*+*+*+*+*+*
+			+*+code.monitor-2-2::before {
+	content: "2";
+}
+div.demo > input:not(:checked)+*
+			+input:not(:checked)+*
+			+input:checked+* 
+			+input:checked+* 
+			+*+*+*+*+*+*+*+*
+			+*+code.monitor-2-2::before {
+	content: "3";
+}
+div.demo > input:not(:checked)+*
+			+input:checked+* 
+			+input:not(:checked)+*
+			+input:not(:checked)+*
+			+*+*+*+*+*+*+*+*
+			+*+code.monitor-2-2::before {
+	content: "4";
+}
+div.demo > input:not(:checked)+*
+			+input:checked+* 
+			+input:not(:checked)+*
+			+input:checked+* 
+			+*+*+*+*+*+*+*+*
+			+*+code.monitor-2-2::before {
+	content: "5";
+}
+div.demo > input:not(:checked)+*
+			+input:checked+* 
+			+input:checked+* 
+			+input:not(:checked)+*
+			+*+*+*+*+*+*+*+*
+			+*+code.monitor-2-2::before {
+	content: "6";
+}
+div.demo > input:not(:checked)+*
+			+input:checked+* 
+			+input:checked+* 
+			+input:checked+* 
+			+*+*+*+*+*+*+*+*
+			+*+code.monitor-2-2::before {
+	content: "7";
+}
+div.demo > input:checked+*
+			+input:not(:checked)+*
+			+input:not(:checked)+*
+			+input:not(:checked)+*
+			+*+*+*+*+*+*+*+*
+			+*+code.monitor-2-2::before {
+	content: "8";
+}
+div.demo > input:checked+*
+			+input:not(:checked)+*
+			+input:not(:checked)+*
+			+input:checked+* 
+			+*+*+*+*+*+*+*+*
+			+*+code.monitor-2-2::before {
+	content: "9";
+}
+div.demo > input:checked+*
+			+input:not(:checked)+*
+			+input:checked+* 
+			+input:not(:checked)+*
+			+*+*+*+*+*+*+*+*
+			+*+code.monitor-2-2::before {
+	content: "A";
+}
+div.demo > input:checked+*
+			+input:not(:checked)+*
+			+input:checked+* 
+			+input:checked+* 
+			+*+*+*+*+*+*+*+*
+			+*+code.monitor-2-2::before {
+	content: "B";
+}
+div.demo > input:checked+*
+			+input:checked+* 
+			+input:not(:checked)+*
+			+input:not(:checked)+*
+			+*+*+*+*+*+*+*+*
+			+*+code.monitor-2-2::before {
+	content: "C";
+}
+div.demo > input:checked+*
+			+input:checked+* 
+			+input:not(:checked)+*
+			+input:checked+* 
+			+*+*+*+*+*+*+*+*
+			+*+code.monitor-2-2::before {
+	content: "D";
+}
+div.demo > input:checked+*
+			+input:checked+* 
+			+input:checked+* 
+			+input:not(:checked)+*
+			+*+*+*+*+*+*+*+*
+			+*+code.monitor-2-2::before {
+	content: "E";
+}
+div.demo > input:checked+*
+			+input:checked+* 
+			+input:checked+* 
+			+input:checked+* 
+			+*+*+*+*+*+*+*+*
+			+*+code.monitor-2-2::before {
+	content: "F";
+}

@@ -3,18 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="assets/css/core.css" rel="stylesheet" type="text/css" media="all">
+	<link href="assets/css/hex.css" rel="stylesheet" type="text/css" media="all">
 	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 	<title>Logical AND Demo</title>
 	<!-- Demo Rules -->
 	<style type="text/css">
 		/* Update Box to be TAB-able */
-		div.demo > input:checked +*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+
-					input:checked +*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ input { 
+		div.demo > input:checked +*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ *+*+*+
+					input:checked +*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ *+*+*+ input { 
 			display: block;
 		}
 		/* update colour to show that it is tab-able */
-		div.demo > input:checked +*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ 
-					input:checked +*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ *+label {
+		div.demo > input:checked +*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ *+*+*+ 
+					input:checked +*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ *+*+*+ *+label {
 			background: yellow;
 		}
 	</style>
@@ -60,6 +61,10 @@
 		<input type="checkbox" id="a7">
 		<label for="a7" class="last"></label>
 
+		<object class="label">Hex:</object>
+		<code class="monitor-2-2 label"></code>
+		<code class="monitor-1-2 label"></code>
+
 		<!-- B register -->
 		<br><br>
 		<object class="label">B:</object>
@@ -88,6 +93,10 @@
 		<input type="checkbox" id="b7">
 		<label for="b7" class="last"></label>
 
+		<object class="label">Hex:</object>
+		<code class="monitor-2-2 label"></code>
+		<code class="monitor-1-2 label"></code>
+
 		<!-- R register -->
 		<br><br><hr class="thin">
 		<object class="label">R:</object>
@@ -115,6 +124,10 @@
 
 		<input type="checkbox" id="r7">
 		<label for="r7" class="last"></label>
+
+		<object class="label">Hex:</object>
+		<code class="monitor-2-2 label"></code>
+		<code class="monitor-1-2 label"></code>
 	</div>
 </body>
 </html>
