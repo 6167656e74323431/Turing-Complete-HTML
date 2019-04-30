@@ -6,6 +6,12 @@ h1 {
 	margin-bottom: -2px;
 	font-family: "Segoe UI", Arial, Helvetica, sans-serif;
 }
+code {
+	font-family: "Consolas", Arial, Helvetica, sans-serif;
+}
+code.italic {
+	font-style: italic;
+}
 hr.thin {
 	margin: 5px;
 	margin-left: -1px;
@@ -17,6 +23,7 @@ div.demo {
 	display: inline-block;
 	border: 1px solid #ddd;
 	padding: 10px;
+	margin-left: 2em;
 	/* disable selection of text */
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;

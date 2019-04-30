@@ -7,60 +7,14 @@
 	<title>Logical AND Demo</title>
 	<!-- Demo Rules -->
 	<style type="text/css">
-		/* 2^0 Bit */
-		div.demo > input:checked+*+br+br+object+*+*+*+*+*+*+*+*+*+*+*+*+*+*+input:checked+*+br+br+hr+object+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ input { 
+		/* Update Box to be TAB-able */
+		div.demo > input:checked +*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+
+					input:checked +*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ input { 
 			display: block;
 		}
-		div.demo > input:checked+*+br+br+object+*+*+*+*+*+*+*+*+*+*+*+*+*+*+input:checked+*+br+br+hr+object+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ *+label { 
-			background: yellow;
-		}
-		/* 2^1 Bit */
-		div.demo > input:checked+*+*+*+br+br+object+*+*+*+*+*+*+*+*+*+*+*+*+input:checked+*+*+*+br+br+hr+object+*+*+*+*+*+*+*+*+*+*+*+*+ input { 
-			display: block;
-		}
-		div.demo > input:checked+*+*+*+br+br+object+*+*+*+*+*+*+*+*+*+*+*+*+input:checked+*+*+*+br+br+hr+object+*+*+*+*+*+*+*+*+*+*+*+*+ *+label {
-			background: yellow;
-		}
-		/* 2^2 Bit */
-		div.demo > input:checked+*+*+*+*+*+br+br+object+*+*+*+*+*+*+*+*+*+*+input:checked+*+*+*+*+*+br+br+hr+object+*+*+*+*+*+*+*+*+*+*+ input { 
-			display: block;
-		}
-		div.demo > input:checked+*+*+*+*+*+br+br+object+*+*+*+*+*+*+*+*+*+*+input:checked+*+*+*+*+*+br+br+hr+object+*+*+*+*+*+*+*+*+*+*+ *+label {
-			background: yellow;
-		}
-		/* 2^3 Bit */
-		div.demo > input:checked+*+*+*+*+*+*+*+br+br+object+*+*+*+*+*+*+*+*+input:checked+*+*+*+*+*+*+*+br+br+hr+object+*+*+*+*+*+*+*+*+ input { 
-			display: block;
-		}
-		div.demo > input:checked+*+*+*+*+*+*+*+br+br+object+*+*+*+*+*+*+*+*+input:checked+*+*+*+*+*+*+*+br+br+hr+object+*+*+*+*+*+*+*+*+ *+label {
-			background: yellow;
-		}
-		/* 2^4 Bit */
-		div.demo > input:checked+*+*+*+*+*+*+*+*+*+br+br+object+*+*+*+*+*+*+input:checked+*+*+*+*+*+*+*+*+*+br+br+hr+object+*+*+*+*+*+*+ input { 
-			display: block;
-		}
-		div.demo > input:checked+*+*+*+*+*+*+*+*+*+br+br+object+*+*+*+*+*+*+input:checked+*+*+*+*+*+*+*+*+*+br+br+hr+object+*+*+*+*+*+*+ *+label {
-			background: yellow;
-		}
-		/* 2^5 Bit */
-		div.demo > input:checked+*+*+*+*+*+*+*+*+*+*+*+br+br+object+*+*+*+*+input:checked+*+*+*+*+*+*+*+*+*+*+*+br+br+hr+object+*+*+*+*+ input { 
-			display: block;
-		}
-		div.demo > input:checked+*+*+*+*+*+*+*+*+*+*+*+br+br+object+*+*+*+*+input:checked+*+*+*+*+*+*+*+*+*+*+*+br+br+hr+object+*+*+*+*+ *+label {
-			background: yellow;
-		}
-		/* 2^6 Bit */
-		div.demo > input:checked+*+*+*+*+*+*+*+*+*+*+*+*+*+br+br+object+*+*+input:checked+*+*+*+*+*+*+*+*+*+*+*+*+*+br+br+hr+object+*+*+ input { 
-			display: block;
-		}
-		div.demo > input:checked+*+*+*+*+*+*+*+*+*+*+*+*+*+br+br+object+*+*+input:checked+*+*+*+*+*+*+*+*+*+*+*+*+*+br+br+hr+object+*+*+ *+label {
-			background: yellow;
-		}
-		/* 2^7 Bit */
-		div.demo > input:checked+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+br+br+object+input:checked+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+br+br+hr+object+ input { 
-			display: block;
-		}
-		div.demo > input:checked+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+br+br+object+input:checked+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+br+br+hr+object+ *+label {
+		/* update colour to show that it is tab-able */
+		div.demo > input:checked +*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ 
+					input:checked +*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ *+label {
 			background: yellow;
 		}
 	</style>
@@ -68,6 +22,16 @@
 <body>
 	<h1>Logical AND Demo</h1>
 	<hr>
+	<p>A simple demo demonstrating the power of pure HTML5 and CSS3 by implementing the logical AND function. In this demo register <code>A</code> and <code>B</code> can be set to the equivalent binary that represents an 8-bit integer. After processing, the <code>R</code> register will contain the equivalent binary of the integer equal to <code>A ∧ B</code> (<code>A AND B</code>).</p>
+	<b>Usage:</b>
+	<ol>
+		<li>Set both register <code>A</code> and register <code>B</code> to the binary representation of two binary integers.</li>
+		<li>Press the <code class="italic">TAB</code> key to go to the first bit in <code>R</code> that needs to be changed.</li>
+		<li>Press <code class="italic">SPACE</code> to set that bit.</li>
+		<li>Repeat steps 2-3 until none of the bits in <code>R</code> are either yellow, or magenta.</li>
+	</ol>
+	<b>Demo:</b>
+	<br><br>
 	<div class="demo">
 		<!-- A register -->
 		<object class="label">A:</object>
