@@ -58,6 +58,9 @@ div.demo > label.last {
 div.demo > label::before {
 	content: "0";
 }
+div.demo > input:checked {
+	display: none !important;
+}
 div.demo > input:checked + label::before {
 	content: "1";
 }
