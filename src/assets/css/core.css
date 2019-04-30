@@ -1,0 +1,64 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 10;
+}
+h1 {
+	margin-bottom: -2px;
+	font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+hr.thin {
+	margin: 5px;
+	margin-left: -1px;
+	color: #ddd;
+	background-color: #ddd;
+	width: 100%;
+}
+div.demo {
+	display: inline-block;
+	border: 1px solid #ddd;
+	padding: 10px;
+	/* disable selection of text */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+div.demo > object.label {
+	padding: 5px 12px;
+	display: inline-block;
+	float: left;
+}
+div.demo > input {
+	display: none;
+	position: absolute;
+	top: -1000px;
+	left: -1000px;
+}
+div.demo > label {
+	display: inline-block;
+	float: left;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	padding: 5px 12px;
+	color: black;
+}
+div.demo > label.last {
+	border-right: 1px solid #ddd;
+}
+div.demo > label::before {
+	content: "0";
+}
+div.demo > input:checked + label::before {
+	content: "1";
+}
+div.demo > input:checked + label {
+	background: black !important;
+	color: white;
+}
+div.demo > input:focus + label {
+	background: magenta !important;
+	color: black !important;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="assets/css/core.css" rel="stylesheet" type="text/css" media="all">
+	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+	<title>Logical AND Demo</title>
+	<!-- Demo Rules -->
+	<style type="text/css">
+		/* 2^0 Bit */
+		div.demo > input:checked+*+br+br+object+*+*+*+*+*+*+*+*+*+*+*+*+*+*+input:checked+*+br+br+hr+object+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ input { 
+			display: block;
+		}
+		div.demo > input:checked+*+br+br+object+*+*+*+*+*+*+*+*+*+*+*+*+*+*+input:checked+*+br+br+hr+object+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ *+label { 
+			background: yellow;
+		}
+		/* 2^1 Bit */
+		div.demo > input:checked+*+*+*+br+br+object+*+*+*+*+*+*+*+*+*+*+*+*+input:checked+*+*+*+br+br+hr+object+*+*+*+*+*+*+*+*+*+*+*+*+ input { 
+			display: block;
+		}
+		div.demo > input:checked+*+*+*+br+br+object+*+*+*+*+*+*+*+*+*+*+*+*+input:checked+*+*+*+br+br+hr+object+*+*+*+*+*+*+*+*+*+*+*+*+ *+label {
+			background: yellow;
+		}
+		/* 2^2 Bit */
+		div.demo > input:checked+*+*+*+*+*+br+br+object+*+*+*+*+*+*+*+*+*+*+input:checked+*+*+*+*+*+br+br+hr+object+*+*+*+*+*+*+*+*+*+*+ input { 
+			display: block;
+		}
+		div.demo > input:checked+*+*+*+*+*+br+br+object+*+*+*+*+*+*+*+*+*+*+input:checked+*+*+*+*+*+br+br+hr+object+*+*+*+*+*+*+*+*+*+*+ *+label {
+			background: yellow;
+		}
+		/* 2^3 Bit */
+		div.demo > input:checked+*+*+*+*+*+*+*+br+br+object+*+*+*+*+*+*+*+*+input:checked+*+*+*+*+*+*+*+br+br+hr+object+*+*+*+*+*+*+*+*+ input { 
+			display: block;
+		}
+		div.demo > input:checked+*+*+*+*+*+*+*+br+br+object+*+*+*+*+*+*+*+*+input:checked+*+*+*+*+*+*+*+br+br+hr+object+*+*+*+*+*+*+*+*+ *+label {
+			background: yellow;
+		}
+		/* 2^4 Bit */
+		div.demo > input:checked+*+*+*+*+*+*+*+*+*+br+br+object+*+*+*+*+*+*+input:checked+*+*+*+*+*+*+*+*+*+br+br+hr+object+*+*+*+*+*+*+ input { 
+			display: block;
+		}
+		div.demo > input:checked+*+*+*+*+*+*+*+*+*+br+br+object+*+*+*+*+*+*+input:checked+*+*+*+*+*+*+*+*+*+br+br+hr+object+*+*+*+*+*+*+ *+label {
+			background: yellow;
+		}
+		/* 2^5 Bit */
+		div.demo > input:checked+*+*+*+*+*+*+*+*+*+*+*+br+br+object+*+*+*+*+input:checked+*+*+*+*+*+*+*+*+*+*+*+br+br+hr+object+*+*+*+*+ input { 
+			display: block;
+		}
+		div.demo > input:checked+*+*+*+*+*+*+*+*+*+*+*+br+br+object+*+*+*+*+input:checked+*+*+*+*+*+*+*+*+*+*+*+br+br+hr+object+*+*+*+*+ *+label {
+			background: yellow;
+		}
+		/* 2^6 Bit */
+		div.demo > input:checked+*+*+*+*+*+*+*+*+*+*+*+*+*+br+br+object+*+*+input:checked+*+*+*+*+*+*+*+*+*+*+*+*+*+br+br+hr+object+*+*+ input { 
+			display: block;
+		}
+		div.demo > input:checked+*+*+*+*+*+*+*+*+*+*+*+*+*+br+br+object+*+*+input:checked+*+*+*+*+*+*+*+*+*+*+*+*+*+br+br+hr+object+*+*+ *+label {
+			background: yellow;
+		}
+		/* 2^7 Bit */
+		div.demo > input:checked+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+br+br+object+input:checked+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+br+br+hr+object+ input { 
+			display: block;
+		}
+		div.demo > input:checked+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+br+br+object+input:checked+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+br+br+hr+object+ *+label {
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+	<h1>Logical AND Demo</h1>
+	<hr>
+	<div class="demo">
+		<!-- A register -->
+		<object class="label">A:</object>
+
+		<input type="checkbox" id="a0">
+		<label for="a0"></label>
+
+		<input type="checkbox" id="a1">
+		<label for="a1"></label>
+
+		<input type="checkbox" id="a2">
+		<label for="a2"></label>
+
+		<input type="checkbox" id="a3">
+		<label for="a3"></label>
+
+		<input type="checkbox" id="a4">
+		<label for="a4"></label>
+
+		<input type="checkbox" id="a5">
+		<label for="a5"></label>
+
+		<input type="checkbox" id="a6">
+		<label for="a6"></label>
+
+		<input type="checkbox" id="a7">
+		<label for="a7" class="last"></label>
+
+		<!-- B register -->
+		<br><br>
+		<object class="label">B:</object>
+
+		<input type="checkbox" id="b0">
+		<label for="b0"></label>
+
+		<input type="checkbox" id="b1">
+		<label for="b1"></label>
+
+		<input type="checkbox" id="b2">
+		<label for="b2"></label>
+
+		<input type="checkbox" id="b3">
+		<label for="b3"></label>
+
+		<input type="checkbox" id="b4">
+		<label for="b4"></label>
+
+		<input type="checkbox" id="b5">
+		<label for="b5"></label>
+
+		<input type="checkbox" id="b6">
+		<label for="b6"></label>
+
+		<input type="checkbox" id="b7">
+		<label for="b7" class="last"></label>
+
+		<!-- R register -->
+		<br><br><hr class="thin">
+		<object class="label">R:</object>
+
+		<input type="checkbox" id="r0">
+		<label for="r0"></label>
+
+		<input type="checkbox" id="r1">
+		<label for="r1"></label>
+
+		<input type="checkbox" id="r2">
+		<label for="r2"></label>
+
+		<input type="checkbox" id="r3">
+		<label for="r3"></label>
+
+		<input type="checkbox" id="r4">
+		<label for="r4"></label>
+
+		<input type="checkbox" id="r5">
+		<label for="r5"></label>
+
+		<input type="checkbox" id="r6">
+		<label for="r6"></label>
+
+		<input type="checkbox" id="r7">
+		<label for="r7" class="last"></label>
+	</div>
+</body>
+</html>
