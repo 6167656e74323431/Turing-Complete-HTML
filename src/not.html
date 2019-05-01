@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="assets/css/core.css" rel="stylesheet" type="text/css" media="all">
+	<link href="assets/css/hex.css" rel="stylesheet" type="text/css" media="all">
+	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+	<title>Logical NOT Demo</title>
+	<!-- Demo Rules -->
+	<style type="text/css">
+		/* Update Box to be TAB-able */
+		div.demo > input:not(:checked) +*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ *+*+*+*+ input { 
+			display: block;
+		}
+		/* update colour to show that it is tab-able */
+		div.demo > input:not(:checked) +*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ *+*+*+*+ *+label {
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+	<h1>Logical NOT Demo</h1>
+	<hr>
+	<p>A simple demo demonstrating the power of pure HTML5 and CSS3 by implementing the logical OR function. In this demo register <code>A</code> can be set to the equivalent binary that represents an 8-bit integer. After processing, the <code>R</code> register will contain the equivalent binary of the integer equal to <code>¬ A</code> (<code>NOT A</code>).</p>
+	<b>Usage:</b>
+	<ol>
+		<li>Set register <code>A</code> to the binary representation of an integer.</li>
+		<li>Press the <code class="italic">TAB</code> key to go to the first bit in <code>R</code> that needs to be changed.</li>
+		<li>Press <code class="italic">SPACE</code> to set that bit.</li>
+		<li>Repeat steps 2-3 until none of the bits in <code>R</code> are either yellow, or magenta.</li>
+	</ol>
+	<b>Demo:</b>
+	<br><br>
+	<div class="demo">
+		<!-- A register -->
+		<object class="label">A:</object>
+
+		<input type="checkbox" id="a0">
+		<label for="a0"></label>
+
+		<input type="checkbox" id="a1">
+		<label for="a1"></label>
+
+		<input type="checkbox" id="a2">
+		<label for="a2"></label>
+
+		<input type="checkbox" id="a3">
+		<label for="a3"></label>
+
+		<input type="checkbox" id="a4">
+		<label for="a4"></label>
+
+		<input type="checkbox" id="a5">
+		<label for="a5"></label>
+
+		<input type="checkbox" id="a6">
+		<label for="a6"></label>
+
+		<input type="checkbox" id="a7">
+		<label for="a7" class="last"></label>
+
+		<object class="label">Hex:</object>
+		<code class="monitor-2-2 label"></code>
+		<code class="monitor-1-2 label"></code>
+
+		<!-- R register -->
+		<br><br><hr class="thin">
+		<object class="label">R:</object>
+
+		<input type="checkbox" id="r0">
+		<label for="r0"></label>
+
+		<input type="checkbox" id="r1">
+		<label for="r1"></label>
+
+		<input type="checkbox" id="r2">
+		<label for="r2"></label>
+
+		<input type="checkbox" id="r3">
+		<label for="r3"></label>
+
+		<input type="checkbox" id="r4">
+		<label for="r4"></label>
+
+		<input type="checkbox" id="r5">
+		<label for="r5"></label>
+
+		<input type="checkbox" id="r6">
+		<label for="r6"></label>
+
+		<input type="checkbox" id="r7">
+		<label for="r7" class="last"></label>
+
+		<object class="label">Hex:</object>
+		<code class="monitor-2-2 label"></code>
+		<code class="monitor-1-2 label"></code>
+	</div>
+</body>
+</html>
